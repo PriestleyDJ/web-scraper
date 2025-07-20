@@ -6,3 +6,6 @@ def normalise_url(url):
     normalised_url = f"{parsed_url.netloc.removeprefix('www.')}{parsed_url.path}"
     normalised_url = normalised_url.rstrip("/")
     return normalised_url.lower()
+
+def get_urls_from_html(html, base_url):
+    
